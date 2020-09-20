@@ -8,7 +8,7 @@ $(document).ready(function(){
 	$("._1").click(function(){
 		if(already_checked("._1") == 0) {
 			if(player == 1) {
-				$("._1").text("X");
+				$("._1").text("X").delay(1000);
 				click = click + 1;
 				t = tie(click, table, "X");
 				if(t == 1) {
@@ -18,13 +18,13 @@ $(document).ready(function(){
 				if(win(table,"X")) {
 					$("._1").text("X");
 					click = 0;
-					alert("Winner:X").delay(3000);
+					alert("Winner:X");
 					reset(table);
 				} else {
 					return player = 2;
 				}
 			} else if (player == 2) {
-				$("._1").text("O");
+				$("._1").text("O").delay(1000);
 				click = click + 1;
 				t = tie(click, table, "O");
 				if(t == 1) {
@@ -34,7 +34,7 @@ $(document).ready(function(){
 				if(win(table,"O")) {
 					$("._1").text("O");
 					click = 0;
-					alert("Winner:O").delay(3000);
+					alert("Winner:O");
 					reset(table);
 				} else {
 					return player = 1;
