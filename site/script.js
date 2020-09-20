@@ -18,7 +18,7 @@ $(document).ready(function(){
 				if(win(table,"X")) {
 					$("._1").text("X");
 					click = 0;
-					alert("Winner:X");
+					alert("Winner:X").delay(3000);
 					reset(table);
 				} else {
 					return player = 2;
@@ -34,7 +34,7 @@ $(document).ready(function(){
 				if(win(table,"O")) {
 					$("._1").text("O");
 					click = 0;
-					alert("Winner:O");
+					alert("Winner:O").delay(3000);
 					reset(table);
 				} else {
 					return player = 1;
