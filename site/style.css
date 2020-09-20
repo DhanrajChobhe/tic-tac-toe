@@ -1,0 +1,35 @@
+body {
+	background-color: black;
+}
+
+.ttt {
+	height: 500px;
+	width: 400px;
+	background-color: grey;
+	margin: auto;
+	position: relative;
+}
+h1 {
+	text-align: center;
+}
+td {
+	line-height: 90px;
+	font-size: 70px;
+	margin: auto;
+	height: 90px;
+	width: 90px;
+	text-align: center;
+	background-color: rgba(33, 33, 33, 0.9);
+}
+table, th, td {
+  border: 1px solid black;
+  margin: auto;
+}
+button {
+	width: 270px;
+	height: 40px;
+	position: absolute;
+	bottom: 40px;
+	left: 65px;
+
+}
